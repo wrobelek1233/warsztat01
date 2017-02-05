@@ -1,0 +1,544 @@
+/* UTILITIES */
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.titleMark {
+    color: #24ba9f;
+    font-weight: 800;
+}
+
+.btn {
+    background-color: #24ba9f;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+.header {
+    background: #000;
+    color: white;
+    padding: 15px 0;
+}
+
+.mainNav {
+    float: right;
+}
+
+.mainNav > li {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.subMenu {
+    display: none;
+    background-color: #000;
+    position: absolute;
+    padding: 10px;
+    top: 60px;
+    right: 380px;
+}
+
+.subMenu::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #000;
+    position: absolute;
+    top: -15px;
+    left: 38px;
+}
+
+.subMenu li {
+    display: block;
+}
+
+.mainNav li:hover .subMenu {
+    display: block;
+}
+
+
+/* SECTION SLIDER */
+
+section.slider {
+    height: 450px;
+    background: rgba(219, 219, 219, 1);
+    background: -moz-linear-gradient(top, rgba(219, 219, 219, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(209, 209, 209, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219, 219, 219, 1)), color-stop(50%, rgba(254, 254, 254, 1)), color-stop(100%, rgba(209, 209, 209, 1)));
+    background: -webkit-linear-gradient(top, rgba(219, 219, 219, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(209, 209, 209, 1) 100%);
+    background: -o-linear-gradient(top, rgba(219, 219, 219, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(209, 209, 209, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(219, 219, 219, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(209, 209, 209, 1) 100%);
+    background: linear-gradient(to bottom, rgba(219, 219, 219, 1) 0%, rgba(254, 254, 254, 1) 50%, rgba(209, 209, 209, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#dbdbdb', endColorstr='#d1d1d1', GradientType=0);
+}
+
+section.slider .container {
+    position: relative;
+}
+
+.slider .chair {
+    width: 40%;
+    margin-top: 80px;
+}
+
+.slider .seeMore {
+    width: 60%;
+}
+
+.slider .seeMore h1 {
+    margin-top: 110px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slider .seeMore p {
+    text-align: center;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 21px;
+}
+
+.slider .seeMore .seeMoreButton {
+    margin-top: 29px;
+    display: inline-block;
+}
+
+.slider .arrow {
+    color: #24ba9f;
+    position: absolute;
+    font-size: 74px;
+    font-style: normal;
+    top: 180px;
+}
+
+.slider #arrow-left {
+    left: 0;
+}
+
+.slider #arrow-right {
+    right: 0;
+}
+
+
+/*slider2*/
+
+section.slider2 {
+    height: 350px;
+}
+
+.pictureFrame {
+    width: 330px;
+    float: left;
+    margin-top: 25px;
+}
+
+.withMargin {
+    margin: 25px 28px;
+}
+
+.grayBack {
+    position: relative;
+    margin-top: -78px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 313px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-left: 17px;
+    color: black;
+}
+
+.rightPara {
+    float: left;
+    width: 285px;
+    border: 1px solid lightgray;
+    height: 225px;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: white;
+}
+
+.text1 {
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.greenLine {
+    width: 43%;
+    height: 7px;
+    background-color: #24ba9f;
+}
+
+.mainText {
+    padding-top: 10px;
+    line-height: 21px;
+    color: gray;
+    font-size: 14px;
+}
+
+
+/*slider3*/
+
+.slider3 {
+    height: 705px;
+    background-color: #f1f1f1;
+    padding-top: 43px;
+}
+
+.titleSlider {
+    font-size: 23px;
+    text-transform: uppercase;
+    padding-left: 1.5px;
+    font-weight: 600;
+    color: gray;
+}
+
+.longGreenLine {
+    width: 320px;
+    height: 8px;
+    background-color: #24ba9f;
+    margin-top: 6px;
+}
+
+.sideContainer {
+    float: left;
+    width: 325px;
+    margin-top: 24px;
+    height: 500px;
+}
+
+.middleContainer {
+    float: left;
+    width: 325px;
+    margin: 25px 25px;
+    height: 500px;
+}
+
+.side {
+    width: 330px;
+    height: 501px;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    margin: 52px 0px;
+}
+
+.smallCircle {
+    width: 27px;
+    height: 27px;
+    background-color: #c2c2c2;
+    position: absolute;
+    top: -22px;
+    left: 150px;
+    border-radius: 50%;
+}
+
+.bigCircle {
+    position: absolute;
+    top: -40px;
+    left: 133px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid darkgray;
+    width: 60px;
+    height: 60px;
+}
+
+.mainCont {
+    width: 327px;
+    padding: 17px 1px;
+    height: 498px;
+}
+
+.mainTitle {
+    font-size: 24px;
+    color: #27c7ab;
+    text-align: center;
+    margin: 9px 11px 0 11px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.priceCircleCont {
+    width: 129px;
+    height: 129px;
+    background-color: white;
+    border: 2px solid gray;
+    margin: 25px auto;
+    border-radius: 50%;
+}
+
+.priceFirst {
+    margin: 25px 32px;
+    font-size: 50px;
+    font-weight: 800;
+    color: lightgray;
+    text-align: center;
+}
+
+.priceThird {
+    margin: 25px 11px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #d4d4d4;
+    text-align: center;
+}
+
+.priceSecond {
+    vertical-align: super;
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+}
+
+.hirePurchasePrice {
+    font-size: 16px;
+    text-align: center;
+    color: lightgray;
+    font-weight: 700;
+    margin: -23px 0;
+    text-transform: uppercase;
+}
+
+.purchase {
+    margin-top: 33px;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    letter-spacing: 0px;
+    word-spacing: 1.5px;
+    color: gray;
+    background-color: lightgray;
+}
+
+.service {
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    letter-spacing: -1.5px;
+    word-spacing: 3px;
+    color: gray;
+    background-color: whitesmoke;
+}
+
+.warranty {
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    letter-spacing: -1.5px;
+    word-spacing: 3px;
+    color: gray;
+    background-color: lightgray;
+}
+
+.button {
+    margin: 110px auto;
+    width: 123px;
+    height: 35px;
+    background-color: #27c7ab;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 10px;
+}
+
+.buttonRight {
+    margin: 20px auto;
+    width: 123px;
+    height: 35px;
+    background-color: #27c7ab;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 10px;
+}
+
+.middleCont {
+    background-color: #27c7ab;
+    border: none;
+    padding: 1px;
+}
+
+.middleContColor {
+    background-color: whitesmoke;
+}
+
+.middleContTitle {
+    color: white;
+}
+
+.middleContCircle {
+    background-color: white;
+    margin-top: 26px;
+    border: 2px solid white;
+}
+
+.priceFontColor {
+    color: #27c7ab;
+}
+
+.middleButton {
+    margin: 65px auto;
+    background-color: white;
+    color: #27c7ab;
+}
+
+.middleContTaxt {
+    background-color: white;
+}
+
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.contact {
+    background-color: white;
+    height: 550px;
+    padding-top: 31px;
+    padding-left: 10px;
+}
+
+.contactForm {
+    float: left;
+    width: 580px;
+    margin-top: 24px;
+    height: 450px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 540px;
+    height: 62px;
+    margin-top: 24px;
+    font-size: 30px;
+    font-weight: 300;
+    color: gray;
+    padding-left: 13px;
+    border-color: #27c7ab;
+    border-width: thin;
+}
+
+#email {
+    margin-top: 26px;
+}
+
+#wiadomosc {
+    margin: 24px 5px 0px 0px;
+    height: 180px;
+    padding-top: 11px;
+}
+
+.contactChair {
+    float: left;
+    width: 400px;
+    margin: 24px auto;
+    height: 450px;
+    padding-left: 50px;
+}
+
+#redChair {
+    margin: -8px 35px;
+    padding-bottom: 41px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    font-size: 20px;
+    letter-spacing: -0.2px;
+    line-height: 23px;
+    color: lightgray;
+}
+
+input[type="checkbox"] + label span {
+    float: left;
+    border: 1px solid #27c7ab;
+    width: 50px;
+    height: 48px;
+    margin: -4px 11px;
+    vertical-align: middle;
+    background: url(../images/form_ok.jpg) -20px 50px no-repeat;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background: url(../images/form_ok.jpg) -2px 5px no-repeat;
+}
+
+#buttonContact {
+    clear: both;
+    content: "";
+    display: block;
+    text-align: center;
+    height: 40px;
+    font-weight: 600;
+    margin: 40px 11px;
+    width: 343px;
+    font-size: 32px;
+    border-radius: 10px;
+}
+/*//////////////////////////////////////////////////////////*/
+
+.foot {
+    background: white;
+    color: gray;
+    height: 80px;
+    padding-top: 35px;
+}
+.footerText {
+    font-size: 14px;
+}
+
+.footerText span {
+    font-weight: 900;
+}
+
+.fLeft {
+    float: left;
+}
+
+.fRight {
+    float: right;
+    font-weight: 500;
+    font-size: 18px;
+    margin: -3px 2px;
+}
+
+.icons {
+    float: right;
+    margin: -15px 120px;
+}
